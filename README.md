@@ -7,3 +7,8 @@ Linear model does not fit this dataset wery well, maybe polynomial regression wi
 For detales see this paper on linked in: <paper_link> {Not published yet}
 
 # Student grades
+Using linear regression to predict student rades based on different studying parametrers
+
+For model constructing this dataset was used: https://archive.ics.uci.edu/ml/datasets/Student+Performance
+
+Linear model shows better performance on this dataset. For detales see the same paper
