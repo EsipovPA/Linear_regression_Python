@@ -21,7 +21,6 @@ Y = np.array(data[predict])
 
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size=0.1)
 
-"""
 best_acc = 0
 for _ in range(30):
     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size=0.1)
@@ -37,7 +36,6 @@ for _ in range(30):
         print("saved model to file")
         with open("student_model.pickle", "wb") as f:
             pickle.dump(linear, f)
-"""
 
 # Load the best model achieved
 pickle_in = open("student_model.pickle", "rb")
