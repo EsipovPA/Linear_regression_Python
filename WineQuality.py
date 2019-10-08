@@ -6,13 +6,14 @@ from sklearn import linear_model
 # read the data set for red wine
 data = pd.read_csv("winequality-red.csv", sep=";")
 
-# get best data subset
+# full data set
 '''
 data = data[["fixed acidity", "volatile acidity", "citric acid", "residual sugar",
             "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density",
             "pH", "sulphates", "alcohol", "quality"]]
 '''
 
+# data subset with best influence on the model accuracy
 data = data[["fixed acidity", "volatile acidity", "chlorides", "sulphates", "alcohol", "quality"]]
 
 # get prediction value
